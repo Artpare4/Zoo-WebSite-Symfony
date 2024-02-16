@@ -2,15 +2,20 @@
 
 {% block body %}
     <div>
-        <h1 class="text-center text-6xl mt-36 lg:mt-24 mb-5 text-secondary-800">Comment réserver une entrée pour le parc ?</h1>
+        <h1 id="pageAcceuil" class="text-center text-6xl mt-36 lg:mt-24 mb-5 text-secondary-800">Comment réserver une entrée pour le parc ?</h1>
         <div class="flex">
-            <div>
+            <div class=" ml-3 bg-secondary-800 p-4 rounded-2xl h-fit">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-50 mb-3">Sommaire</h1>
+                <a href="#pageAcceuil"><p class="text-primary-50 text-xl lg:text-2xl">1. Page d'acceuil</p></a>
+                <a href="#BtnRéserv" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl">2. Bouton réservation</p></a>
+                <a href="#billet" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl">3. Choix billet</p></a>
+                <a href="#infoComplet" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl">4. Suite réservation</p></a>
             </div>
             <div class="grow flex flex-col justify-center content-center">
                 <div class="m-3">
-                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">1. Placez-vous sur la page d'accueil</p>
+                    <p  class="text-secondary-800 text-3xl lg:text-4xl text-center ">1. Placez-vous sur la page d'accueil</p>
                     <div class="flex justify-center content-center">
-                        <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image1.jpg') }}">
+                        <img id="BtnRéserv" class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image1.jpg') }}">
                     </div>
                 </div>
 
@@ -20,39 +25,40 @@
                         <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image2.jpg') }}">
                     </div>
                 </div>
-
-                <div class="m-3 bg-primary-500/70 w-fit">
-                    <div class="bg-primary-500 rounded-tl-2xl">
-                        <p class="text-secondary-800 text-3xl lg:text-4xl ml-3 text-left font-bold ">Attention !</p>
-                        <p class="text-secondary-800 text-xl ml-3 lg:text-2xl">Rentrez vos informations de connexion pour accéder à la suite</p>
-                    </div>
-                    <div class="flex justify-center rounded-br-2xl rounded-bl-2xl content-center">
-                        <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image8.jpg') }}">
+                <div class="flex justify-center content-center">
+                    <div class="m-3 bg-primary-500/70 w-fit rounded-tl-2xl rounded-tr-2xl ">
+                        <div class="bg-primary-500 rounded-tl-2xl rounded-tr-2xl">
+                            <p class="text-secondary-800 text-3xl lg:text-4xl ml-3 text-left font-bold ">Attention !</p>
+                            <p class="text-secondary-800 text-xl ml-3 lg:text-2xl">Si vous n'êtes pas connecté,rentrez vos informations de connexion pour accéder à la suite</p>
+                        </div>
+                        <div class="flex justify-center rounded-br-2xl rounded-bl-2xl content-center">
+                            <img id="billet" class="w-[90%] lg:w-[70%] m-3" src="{{ asset('images/tutoriel2/Image8.jpg') }}">
+                        </div>
                     </div>
                 </div>
-
                 <div class="m-3">
-                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">4. Après vous être connecté, choisiez un billet</p>
+                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">3. Choisiez un billet en cliquant sur la case de votre choix</p>
                     <p class="text-secondary-800 text-2xl lg:text-3xl text-center">Ce billet déterminera le nombre de jour que vous pouvez accéder un site, ainsi que le tarif.</p>
-                    <div class="flex justify-center content-center">
-                        <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image9.jpg') }}">
+                    <div class="flex justify-center content-center ">
+                        <img id="infoComplet" class="w-[90%] lg:w-[50%] m-3 " src="{{ asset('images/tutoriel2/Image9.jpg') }}">
                     </div>
                 </div>
 
                 <div class="m-3">
-                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">5. Renseignez la date ainsi que le nombre d'adulte et d'enfants présent.</p>
+                    <p  class="text-secondary-800 text-3xl lg:text-4xl text-center">4. Renseignez la date ainsi que le nombre d'adulte et d'enfants présent.</p>
                     <div class="flex justify-center content-center">
                         <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image10.jpg') }}">
                     </div>
                 </div>
-
-                <div class="m-3 bg-secondary-800 w-fit">
-                    <div class="bg-secondary-800 rounded-tl-2xl">
-                        <p class="text-primary-50 text-3xl lg:text-4xl ml-3 text-left font-bold ">Bravo vous avez réservez votre billet</p>
-                        <p class="text-secondary-800 text-xl ml-3 lg:text-2xl">Pour voire la liste de vos réservation cliquez sur votre compte</p>
-                    </div>
-                    <div class="flex justify-center rounded-br-2xl rounded-bl-2xl content-center">
-                        <img class="w-[50%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image12.jpg') }}">
+                <div class="flex justify-center content-center ">
+                    <div class="m-3 bg-secondary-800 w-fit rounded-2xl ">
+                        <div class="bg-secondary-800 ">
+                            <p class="text-primary-50 text-3xl lg:text-4xl ml-3 text-left font-bold">Bravo vous avez réservez votre billet !</p>
+                            <p class="text-secondary-800 text-xl ml-3 lg:text-2xl">Pour voire la liste de vos réservation cliquez sur votre compte</p>
+                        </div>
+                        <div class="flex justify-center content-center">
+                            <img class="w-[50%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image12.jpg') }}">
+                        </div>
                     </div>
                 </div>
             </div>
