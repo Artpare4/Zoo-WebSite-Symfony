@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div>
+        <h1 id="pageAcceuil" class="text-center text-6xl mt-36 lg:mt-24 mb-5 text-secondary-800">Comment réserver une entrée pour le parc ?</h1>
+        <p class="m-3 text-center text-secondary-800 text-xl lg:text-2xl">Dans ce tutoriel, vous allez apprendre comment réserver un billet pour accéder au parc. Du choix du billet à celui des activités, tout sera dévoilé pour que votre séjour soit le plus personnel possible.</p>
+        <p class="text-center text-secondary-800 text-xl lg:text-2xl">Si vous souhaitez suivre ce tutoriel à l'aide d'une vidéo, cliquez <a href="#vidéo" class="text-primary-800">ici</a></p>
+        <div class="flex">
+            <div class=" ml-3 bg-secondary-800 p-4 rounded-2xl h-fit position:sticky">
+                <h1 class="text-center text-2xl lg:text-4xl text-primary-50 mb-3">Sommaire</h1>
+                <a href="#pageAcceuil"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">1. Page d'accueil</p></a>
+                <a href="#BtnRéserv" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">2. Bouton réservation</p></a>
+                <a href="#billet" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">3. Choix billet</p></a>
+                <a href="#infoComplet" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">4. Suite réservation</p></a>
+                <a href="#event" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">5. Evenements/Activités</p></a>
+                <a href="#vidéo" class="m-4"><p class="text-primary-50 text-xl lg:text-2xl underline underline-offset-4">Ressource vidéo</p></a>
+            </div>
+            <div class="grow flex flex-col justify-center content-center">
+                <div class="m-3">
+                    <p  class="text-secondary-800 text-3xl lg:text-4xl text-center ">1. Placez-vous sur la page d'accueil</p>
+                    <div class="flex justify-center content-center">
+                        <img id="BtnRéserv" class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image1.jpg') }}" alt="page d'accueil avec les zones cliquables pour s'y rendre entourées">
+                    </div>
+                </div>
+
+                <div class="m-3">
+                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">2. Cliquez ensuite sur le bouton <b class="text-primary-800">Réservez vos billets</b></p>
+                    <div class="flex justify-center content-center">
+                        <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image2.jpg') }}" alt="page d'accueil avec les zones cliquables pour démarrer une réservation de billets">
+                    </div>
+                </div>
+                <div class="flex justify-center content-center">
+                    <div class="m-3 bg-primary-500/70 w-fit rounded-tl-2xl rounded-tr-2xl ">
+                        <div class="bg-primary-500 rounded-tl-2xl rounded-tr-2xl p-2">
+                            <p class="text-secondary-800 text-3xl lg:text-4xl ml-3 text-left font-bold ">Attention !</p>
+                            <p class="text-secondary-800 text-xl ml-3 lg:text-2xl">Si vous n'êtes pas connecté, rentrez vos informations de connexion pour accéder à la suite</p>
+                        </div>
+                        <div class="flex justify-center rounded-br-2xl rounded-bl-2xl content-center">
+                            <img id="billet" class="w-[90%] lg:w-[70%] m-3" src="{{ asset('images/tutoriel2/Image8.jpg') }}" alt="Formulaire de connexion">
+                        </div>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <p class="text-secondary-800 text-3xl lg:text-4xl text-center ">3. Choisissez un billet en cliquant sur la case de votre choix</p>
+                    <p class="text-secondary-800 text-2xl lg:text-3xl text-center">Ce billet déterminera le nombre de jours durant lesquels vous pouvez accéder à un site, ainsi que le prix que cela vous coûtera.</p>
+                    <div class="flex justify-center content-center ">
+                        <img id="infoComplet" class="w-[90%] lg:w-[50%] m-3 " src="{{ asset('images/tutoriel2/Image9.jpg') }}" alt="Page montrant des exemples de billets">
+                    </div>
+                </div>
+
+                <div class="m-3">
+                    <p  class="text-secondary-800 text-3xl lg:text-4xl text-center">4. Renseignez la date ainsi que le nombre d'adultes et d'enfants présents.</p>
+                    <div class="flex justify-center content-center">
+                        <img id="event" class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image10.jpg') }}" alt = "Formulaire pour choisir les informations relatives à un billet>
+                    </div>
+                </div>
+
+                <div class="m-3">
+                    <p  class="text-secondary-800 text-3xl lg:text-4xl text-center">5. Indiquez les événements et/ou les activités auxquels vous souhaitez participer.</p>
+                    <p class="text-secondary-800 text-2xl lg:text-3xl text-center">Cliquez sur les cases des événements et activités pour les valider</p>
+                    <div class="flex justify-center content-center">
+                        <img class="w-[90%] lg:w-[50%] m-3" src="{{ asset('images/tutoriel2/Image11.jpg') }}" alt ="page pour choisir les evenements auxquels vous souhaitez participer parmi la liste de ceux disponibles">
+                    </div>
+                </div>
+                <div class="flex justify-center content-center ">
+                    <div class="bg-secondary-800 w-fit rounded-2xl p-4">
+                        <div class="bg-secondary-800 ">
+                            <p class="text-primary-50 text-3xl lg:text-4xl ml-3 text-left font-bold text-center">Bravo vous avez réservé votre billet !</p>
+                            <p class="text-primary-50  text-center text-xl ml-3 lg:text-2xl">Vous pouvez consulter et modifier vos réservations !</p>
+                        </div>
+                        <div class="flex justify-center content-center">
+                            <img id="vidéo" class="w-[90%] lg:w-[80%] m-3" src="{{ asset('images/tutoriel2/Image13.png') }}" alt="Page qui confirme que la réservation s'est bien déroulée, avec la possibilité de voir chacune de nos réservations">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center content-center mt-10">
+                    <div class="m-3 bg-secondary-800 w-fit rounded-2xl ">
+                        <div class="bg-secondary-800 ">
+                            <p class="text-primary-50 text-3xl lg:text-4xl ml-3 text-left font-bold">Ressource Vidéo</p>
+                        </div>
+                        <div class="flex justify-center content-center" >
+                            <video width="1000" height="1000" controls>
+                                <source src="{{ asset('images/video/Réservation.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
