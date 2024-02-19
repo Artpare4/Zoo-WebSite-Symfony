@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création/Modification d'une entité{% endblock %}
+
+{% block body %}
+    <div class="pt-12 pb-36 flex-row bg-secondary-50/40">
+        <nav class="w-[15%] bg-secondary-100 fixed m-10 p-6 mt-24 rounded-xl">
+            <ul class="list-none">
+                <li class="text-3xl">Navigation :</li>
+                <li class="hover:bg-primary-100 ml-6"><a href="#ap">Avant-propos</a></li>
+                <li class="hover:bg-primary-100 text-2xl"><a href="#tv">Tutoriel Vidéo</a></li>
+                <li class="hover:bg-primary-100 text-2xl"><a href="#te">Tutoriel Ecrit</a></li>
+                <li class="hover:bg-primary-100 ml-6"><a href="#te1">1. Connexion</a></li>
+                <li class="hover:bg-primary-100 ml-6"><a href="#te2">2. Accès au backoffice</a></li>
+                <li class="hover:bg-primary-100 ml-6"><a href="#te3">3. Création ou modification d'une entité</a></li>
+            </ul>
+        </nav>
+        <nav class="w-[22%] bg-secondary-100 fixed m-10 p-6 ml-[77%] mt-[12%]  rounded-xl">
+            <ul class="list-none">
+                <li class="text-3xl">Autres tutoriels :</li>
+                <li class="text-xl hover:bg-primary-100 m-6 p-6 border-2 border-bg-primary-100 rounded-xl"><a href="{{ path('app_tutorial_2') }}">Comment réserver une entrée pour le parc ?</a></li>
+                <li class="text-xl hover:bg-primary-100 m-6 p-6 border-2 border-bg-primary-100 rounded-xl"><a href="{{ path('app_tutorial_3') }}">Comment réserver une entrée pour le parc ?</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="flex-column ml-[20%] mr-[25%] p-16 text-xl text-justify mt-24">
+                <h1 class="text-4xl mb-6">Comment créer un Animal en tant qu'Administrateur ?</h1>
+                <article class="text-lg mb-20">Un article de DAUNAT Romain et LECOMTE Erwan écrit le 19/02/2024</article>
+                <article>
+                    <div id="ap"></div>
+                    <h2 class="text-3xl mb-12 ml-16">Avant Propos</h2>
+                    Ce tutoriel à pour but d'apprendre à créer ou modifier des entités en tant qu'administrateur. Ce dernier cible donc
+                    les personnes propriétaires d'un compte administrateur. Dans le cas contraire, aucune des actions de ce dernier ne peuvent être effectuées
+                </article>
+                <div id="tv"></div>
+                <h1 class="text-3xl mt-12 mb-6">Tutoriel vidéo</h1>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/Lh8ovojn7xk?si=fHOJM03ju_dBw5yg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="te"></div>
+                <h1 class="text-3xl mt-12">Tutoriel écrit</h1>
+                <div id="te1"></div>
+                <article>
+                    <h2 class="text-3xl mb-12 ml-16 mt-12">1. Se connecter</h2>
+                    <ul>
+                        <li class="mb-10"> - Allez sur la <a class="underline decoration-solid" href="{{ path('app_login') }}" target="_blank">page d'authentification</a> en cliquant sur le bouton <b>Votre Compte</b>.</li>
+                        <li class="mb-10"> - Entrez vos identifiants.</li>
+                        <li class="mb-10"> - Connectez vous.</li>
+                    </ul>
+                    <img src="{{ asset('images/tutoriel1/login.png') }}" alt="Ecran de connexion"/>
+                    <div id="te2"></div>
+                    <h2 class="text-3xl mb-12 mt-24 ml-16">2. Accéder au Backoffice</h2>
+                    <span class="font-bold">Le backoffice n'est disponible que si vous êtes connectés.</span>
+                    <ul>
+                        <li class="mb-10"></li>
+                        <li class="mb-10"> - Une fois connecté, vous serez redirigé vers la <a class="underline decoration-solid" href="{{ path('app_index') }}" target="_blank">page d'accueil.</a></li>
+                        <li class="mb-10"> - Cliquez sur le bouton <b>Accéder au back-office.</b></li>
+                        <li><img class="mb-10" src="{{ asset('images/tutoriel1/hub2.png') }}" alt="Ecran d'accueil administrateur"/></li>
+                        <li class="mb-10"> - Vous vous trouverez alors dans la partie du site dédiée aux administrateurs.</li>
+                        <li class="mb-10"> - Il est aussi possible d'accéder à cette partie depuis la <a class="underline decoration-solid" href="{{ path('app_user') }}" target="_blank">page de votre compte.</a></li>
+                    </ul>
+                    <div id="te3"></div>
+                    <h2 class="text-3xl mb-12 mt-24 ml-16">3. Modifier ou créer une entité</h2>
+                    Vous êtes désormais dans la <b>partie Backoffice.</b> L'ensemble des données du site (Animaux, Evènements...) est accessible sur la gauche de l'écran
+                    <ul>
+                        <li class="mb-10"></li>
+                        <li class="mb-10"> - Cliquez sur le type de donnée de votre choix</li>
+                        <li><img class="ml-[40%] mb-10" src="{{ asset('images/tutoriel1/border.png') }}" alt="Menu de choix des animaux"/></li>
+                        <li class="mb-10"> - Vous pouvez maintenant observer <b>la liste de données</b> correspondant au type séléctionné. Vous pouvez désormais effectuer les opérations de votre choix.</li>
+                            <li class="ml-10 mb-10"> - Pour <b>modifier</b> une entité existante, cliquez sur les trois points suivant l'entité souhaitée, puis séléctionnez le bouton <b>edit</b>. Vous accéderez à une page qui vous permettera de modifier n'importe quelle donnée de l'entité.</li>
+                        <li><img class="mb-10" src="{{ asset('images/tutoriel1/animal1.png') }}" alt="Page d'accueil pour modifier"/></li>
+                            <li class="ml-10 mb-10"> - Pour en <b>créer</b> une nouvelle, cliquez sur le bouton <b>add (nom du type de l'entité)</b> situé en haut à gauche de la liste. Vous accéderez à une page où vous devrez saisir l'ensemble des informations requises concernant votre nouvelle entité.</li>
+                        <li><img class="mb-10" src="{{ asset('images/tutoriel1/animal.png') }}" alt="Page d'accueil pour créer"/></li>
+                        <li class="mb-10"> - Une fois les informations rentrées, cliquez sur le bouton bleu (soit <b>Save</b> soit <b>Create</b> selon le type d'opération choisi) en haut à droite de l'écran pour sauvegarder l'entité et quitter cette page. Si vous avez encore des modifications à faire, <b>le bouton gris à gauche du bouton de sauvegarde</b> vous permet de sauvegarder sans pour autant quitter la page de saisie.</li>
+                        <li><img class="mb-10" src="{{ asset('images/tutoriel1/animal3.png') }}" alt="Bouton de sauvegarde"/></li>
+                    </ul>
+                    Désormais, vous savez comment modifier ou créer une entité à partir du site directement !
+
+                </article>
+            </div>
+        </main>
+        </div>
+{% endblock %}
