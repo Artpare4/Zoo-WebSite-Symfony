@@ -4,15 +4,15 @@
 
 {% block body %}
     <div class="pt-12 pb-36 flex-row bg-secondary-50/40">
-        <nav class="w-[15%] bg-secondary-50/40 fixed m-10 p-6 mt-24">
+        <nav class="w-[15%] bg-secondary-200 fixed m-10 p-6 mt-24">
             <ul class="list-none">
                 <li class="text-3xl">Sommaire :</li>
-                <li class="ml-6"><a href="#ap">Avant-propos</a></li>
-                <li class="text-2xl"><a href="#tv">Tutoriel Vidéo</a></li>
-                <li class="text-2xl"><a href="#te">Tutoriel Ecrit</a></li>
-                <li class="ml-6"><a href="#te1">1. Connexion</a></li>
-                <li class="ml-6"><a href="#te2">2. Accès au backoffice</a></li>
-                <li class="ml-6"><a href="#te3">3. Création ou modification d'une entité</a></li>
+                <li class="hover:bg-primary-100/50 ml-6"><a href="#ap">Avant-propos</a></li>
+                <li class="hover:bg-primary-100/50 text-2xl"><a href="#tv">Tutoriel Vidéo</a></li>
+                <li class="hover:bg-primary-100/50 text-2xl"><a href="#te">Tutoriel Ecrit</a></li>
+                <li class="hover:bg-primary-100/50 ml-6"><a href="#te1">1. Connexion</a></li>
+                <li class="hover:bg-primary-100/50 ml-6"><a href="#te2">2. Accès au backoffice</a></li>
+                <li class="hover:bg-primary-100/50 ml-6"><a href="#te3">3. Création ou modification d'une entité</a></li>
             </ul>
         </nav>
         <nav class="w-[20%] bg-secondary-50/40 fixed m-10 p-6 ml-[75%] mt-[25%]">
@@ -41,7 +41,7 @@
                 <article>
                     <h2 class="text-3xl mb-12 ml-16 mt-12">1. Se connecter</h2>
                     <ul>
-                        <li class="mb-10"> - Allez sur la <a class="underline decoration-solid" href="{{ path('app_login') }}" target="_blank">page d'authentification</a> en cliquant sur le bouton "Votre Compte".</li>
+                        <li class="mb-10"> - Allez sur la <a class="underline decoration-solid" href="{{ path('app_login') }}" target="_blank">page d'authentification</a> en cliquant sur le bouton <b>Votre Compte</b>.</li>
                         <li class="mb-10"> - Entrez vos identifiants.</li>
                         <li class="mb-10"> - Connectez vous.</li>
                     </ul>
