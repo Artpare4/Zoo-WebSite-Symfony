@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comment réserver ses billets ? (Tutoriel){% endblock %}
+
+{% block body %}
+    <div class="mx-auto my-24 grid grid-cols-12">
+        <h1 class="text-5xl mb-6 mt-12 col-start-4 col-end-11">Comment réserver ses billets ? (Tutoriel)</h1>
+
+        <div class="flex flex-col col-start-2 col-end-4">
+            <h2 class="text-4xl mb-6 mt-12">Sommaire</h2>
+            <ol class="list-decimal mr-4">
+                <li class="border-b mb-2"><a href="#step1">Consultation des évènements</a></li>
+                <li class="border-b mb-2"><a href="#step2">Choisissez l’évènement qui vous plaît </a></li>
+                <li class="border-b mb-2"><a href="#step3">Inscription</a></li>
+                <li class="border-b mb-2"><a href="#step4">Connection (optionnel)</a></li>
+                <li class="border-b mb-2"><a href="#step5">Réservation du billet</a></li>
+                <li class="border-b mb-2"><a href="#step6">Réserver un évènement</a></li>
+                <li class="border-b mb-2"><a href="#step7">Vérification de la réservation</a></li>
+            </ol>
+
+        </div>
+
+        <div class=" flex flex-col col-start-4 col-end-11">
+            <div class="flex flex-col">
+                <h2 id="step0" class="text-4xl mb-6 mt-12">Tutoriel vidéo</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Image7.png') }}" alt="Bouton choix des évènements">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Bouton de la page des évènements</p>
+                </div>
+                <p class="indent-10">Vous pouvez suivre ce tutoriel si bien grâce à la vidéo ci-dessus qu'avec les explications ci-dessous.</p>
+
+            </div>
+
+            <div class="flex flex-col">
+                <h2 id="step1" class="text-4xl mb-6 mt-12">Étape 1 : Consultation des évènements</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Image7.png') }}" alt="Bouton choix des évènements">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Bouton de la page des évènements</p>
+                </div>
+                <p class="indent-10">Pour consulter les évènements cliquer sur évènement dans la barre de navigation ou bien aller au lien suivant :
+                    <a href="http://10.31.32.157/event">http://10.31.32.157/event</a></p>
+
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step2" class="text-4xl mb-6 mt-12">Étape 2 : Choisissez l’évènement qui vous plaît </h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Event-list.png') }}" alt="Page liste des évènements">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Page de consulation des évènements</p>
+                </div>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Event-Info.png') }}" alt="Information de l'événement ">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Page de l'information sur un évènement</p>
+                </div>
+                <p class="indent-10">Cliquez sur l’évènement qui vous plaît via l’option de recherche, vérifiez le nombre de places restantes et les dates à laquelle il a lieu.</p>
+
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step3" class="text-4xl mb-6 mt-12">Étape 3 : Inscription</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Register.png') }}" alt="Bouton inscription">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Bouton menant à l'inscription</p>
+                </div>
+                <p class="indent-10">Si vous avez déjà un compte, passer cette étape.
+                    Pour s’inscrire, rendez-vous sur la page d'accueil puis aller sur l’onglet votre compte situer sur la barre de navigation puis sur le bouton “Créer votre compte !” ou aller au lien suivant :
+                    http://10.31.32.157/register</p>
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step4" class="text-4xl mb-6 mt-12">Étape 4 : Connection (optionnel)</h2>
+                <br>
+                <p class="indent-10">Si vous avez un compte et que vous n’etes pas encore connecté, connectez-vous.</p>
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step5" class="text-4xl mb-6 mt-12">Étape 5 : Réservation du billet</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Reservation.png') }}" alt="Bouton reservation du billet">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Bouton de reservation du billet</p>
+                </div>
+
+                <p class="indent-10">Il est maintenant l’heure de reserver son billet. Pour ce faire, appuyer sur “Reservez vos billets” en haut à droite ou bien au milieu de la page d'accueil.
+                </p>
+
+                <p class="indent-10">Puis, sélectionnez le nombre de jours souhaités pour votre séjour.</p>
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step6" class="text-4xl mb-6 mt-12">Étape 6 : Réserver un évènement</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Info-Reservation.png') }}" alt="Page de reservation">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Page de création d'une résérvation</p>
+                </div>
+                <p class="indent-10">Après avoir choisi le nombre de jours voulus, mettre la date de l’évènement souhaité puis le nombre de personne pour cette réservation.
+                </p>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Event-Choice.png') }}" alt="Choix des événements">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Page de choix des évènements pour une résérvation </p>
+                </div>
+                <p>Une fois le bouton valider pressé, il ne vous suffit plus que de cliquer sur le ou les évènements voulus et de valider son choix !</p>
+            </div>
+            <div class="flex flex-col">
+                <h2 id="step7" class="text-4xl mb-6 mt-12">Étape 7 : Vérification de la réservation</h2>
+                <br>
+                <div class="rounded-3xl mb-4 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s ">
+                    <div class="m-6 mb-2 rounded-3xl flex align-center justify-center flex-col">
+                        <img src="{{ asset('images/tutoriel3/Verification.png') }}" alt="apparition du billet sur le compte">
+                    </div>
+                    <p class="text-center text-text-950 pb-2">Apparition du billet sur le compte</p>
+                </div>
+                <p class="indent-10">Pour vérifier votre réservation, allez sur votre compte, descendez un peu et vous verrez la réservation faite précédemment.</p>
+                <p class="indent-10">Votre réservation est maintenant passée, nous vous souhaitons un bon voyage au sein du parc.</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
