@@ -69,6 +69,12 @@ composer test:cs
 composer fix:cs
 ```
 
+Script de génération de la base de donnée :
+
+```bash
+composer db
+```
+
 ### Users
 
 #### Louise : Utilisateur X
