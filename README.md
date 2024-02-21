@@ -7,7 +7,7 @@
 
 Ce projet est un site de gestion pour un zoo. Il permet de gérer les animaux, les enclos et les évènements. Les visiteurs peuvent réserver leurs places à des évènements.
 
-Ce projet à été fait sous Symfony 6.3 avec tailwind CSS pour la gestion du CSS en front.
+Ce projet a été fait sous Symfony 6.3 avec tailwind CSS pour la gestion du CSS en front.
 
 ## Auteurs
 
