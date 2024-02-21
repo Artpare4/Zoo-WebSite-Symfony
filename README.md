@@ -3,9 +3,11 @@
 ![Static Badge](https://img.shields.io/badge/BUT-S3-teal)
 ![Static Badge](https://img.shields.io/badge/SAE-301-green)
 ![Static Badge](https://img.shields.io/badge/Symfony-6.3-blue)
-![Static Badge](https://img.shields.io/badge/Status-In_progress-gold)
+![Static Badge](https://img.shields.io/badge/Status-Finished-gold)
 
 Ce projet est un site de gestion pour un zoo. Il permet de gérer les animaux, les enclos et les évènements. Les visiteurs peuvent réserver leurs places à des évènements.
+
+Ce projet à été fait sous Symfony 6.3 avec tailwind CSS pour la gestion du CSS en front.
 
 ## Auteurs
 
@@ -30,13 +32,6 @@ Ce projet est un site de gestion pour un zoo. Il permet de gérer les animaux, l
 
 1. Copiez le fichier `.env` en `.env.local`
 2. Modifiez la variable `DATABASE_URL` avec vos informations de connexion
-
-
-## Serveur WEB et BD
-
-Le serveur web et BD répondent tous deux à l'adresse 10.31.32.157 sur le département.
-
-Toutes les configurations relatifs à ses deux espaces sont disponibles dans le fichier server-config.md.
 
 ## Scripts Composer 
 Script de lancement du serveur :
